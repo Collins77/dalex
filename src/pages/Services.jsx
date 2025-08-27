@@ -8,24 +8,24 @@ import { Award, Camera, CircleCheckBig, Clock4, Fingerprint, Headset, Shield, Za
 const Services = () => {
     return (
         <div>
-            <div className='bg-[#f2f7fc] px-[100px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center'>
+            <div className='bg-[#f2f7fc] sm:px-[100px] px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center'>
                 <p className='text-[12px] px-3 py-1 bg-[#dbebff] rounded-md text-[#2b4fba] w-fit'>Professional Security Services</p>
                 <div className="flex flex-col gap-2 items-center justify-center">
-                    <h1 className="text-4xl font-bold text-center">
+                    <h1 className="sm:text-4xl text-2xl font-bold text-center">
                         Comprehensive Security{" "}
                         <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 bg-clip-text text-transparent">
                             Solutions
                         </span>
                     </h1>
-                    <p className="text-gray-600 text-center w-[60%]">From advanced surveillance systems to biometric access control, we provide complete security solutions tailored to your business needs.</p>
+                    <p className="text-gray-600 text-center sm:w-[60%] sm:text-normal text-sm">From advanced surveillance systems to biometric access control, we provide complete security solutions tailored to your business needs.</p>
                 </div>
             </div>
-            <div className='flex flex-col gap-10 px-[100px] py-[40px]'>
-                <div className='flex w-full h-[350px] rounded-md shadow-md'>
-                    <div className='w-[50%] h-full'>
-                        <img src={cctv} alt="cctv" className='w-full h-full object-cover rounded-l-lg' />
+            <div className='flex flex-col gap-10 sm:px-[100px] px-[40px] py-[40px] h-fit bg-white'>
+                <div className='sm:flex w-full sm:h-[350px] rounded-md shadow-md'>
+                    <div className='sm:w-[50%] h-full'>
+                        <img src={cctv} alt="cctv" className='w-full h-full object-cover sm:rounded-l-lg rounded-t-lg' />
                     </div>
-                    <div className='p-[40px] flex flex-col gap-3 w-[50%]'>
+                    <div className='p-[40px] flex flex-col gap-3 sm:w-[50%]'>
                         <div className='flex items-center gap-2'>
                             <div className='w-[50px] h-[50px] rounded-lg flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500'>
                                 <Camera color='white' />
@@ -35,7 +35,7 @@ const Services = () => {
                         <p className='text-gray-500'>Professional CCTV systems with HD cameras, remote monitoring, and cloud storage solutions.</p>
                         <div className='flex flex-col gap-3'>
                             <h1 className='font-bold text-sm'>Key Features:</h1>
-                            <div className='grid grid-cols-2 gap-2'>
+                            <div className='sm:grid sm:grid-cols-2 gap-2 flex flex-col'>
                                 <p className='flex items-center gap-1 text-[12px] text-gray-500'>
                                     <CircleCheckBig color='#00bd7e' size={'12px'} />
                                     4K Ultra HD cameras
@@ -65,8 +65,11 @@ const Services = () => {
                         <button className='px-4 py-1 bg-blue-600 rounded-md w-fit text-white text-sm cursor-pointer hover:bg-blue-800'>Get A Quote</button>
                     </div>
                 </div>
-                <div className='flex w-full h-[350px] rounded-md shadow-md'>
-                    <div className='p-[40px] flex flex-col gap-3 w-[50%]'>
+                <div className='sm:flex w-full sm:h-[350px] rounded-md shadow-md'>
+                    <div className='sm:w-[50%] sm:hidden block h-full'>
+                        <img src={biom} alt="cctv" className='w-full h-full object-cover sm:rounded-r-lg rounded-t-lg' />
+                    </div>
+                    <div className='p-[40px] flex flex-col gap-3 sm:w-[50%]'>
                         <div className='flex items-center gap-2'>
                             <div className='w-[50px] h-[50px] rounded-lg flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500'>
                                 <Fingerprint color='white' />
@@ -76,7 +79,7 @@ const Services = () => {
                         <p className='text-gray-500'>Advanced fingerprint and facial recognition systems for secure access management.</p>
                         <div className='flex flex-col gap-3'>
                             <h1 className='font-bold text-sm'>Key Features:</h1>
-                            <div className='grid grid-cols-2 gap-2'>
+                            <div className='sm:grid sm:grid-cols-2 flex flex-col gap-2'>
                                 <p className='flex items-center gap-1 text-[12px] text-gray-500'>
                                     <CircleCheckBig color='#00bd7e' size={'12px'} />
                                     Fingerprint scanners
@@ -105,15 +108,15 @@ const Services = () => {
                         </div>
                         <button className='px-4 py-1 bg-blue-600 rounded-md w-fit text-white text-sm cursor-pointer hover:bg-blue-800'>Get A Quote</button>
                     </div>
-                    <div className='w-[50%] h-full'>
+                    <div className='w-[50%] sm:block hidden h-full'>
                         <img src={biom} alt="cctv" className='w-full h-full object-cover rounded-r-lg' />
                     </div>
                 </div>
-                <div className='flex w-full h-[350px] rounded-md shadow-md'>
-                    <div className='w-[50%] h-full'>
-                        <img src={elec} alt="cctv" className='w-full h-full object-cover rounded-l-lg' />
+                <div className='sm:flex w-full sm:h-[350px] rounded-md shadow-md'>
+                    <div className='sm:w-[50%] sm:h-full h-[50%]'>
+                        <img src={elec} alt="cctv" className='w-full h-full object-cover sm:rounded-l-lg rounded-t-lg' />
                     </div>
-                    <div className='p-[40px] flex flex-col gap-3 w-[50%]'>
+                    <div className='p-[40px] flex flex-col gap-3 sm:w-[50%]'>
                         <div className='flex items-center gap-2'>
                             <div className='w-[50px] h-[50px] rounded-lg flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500'>
                                 <Zap color='white' />
@@ -123,7 +126,7 @@ const Services = () => {
                         <p className='text-gray-500'>High-voltage perimeter security with intelligent monitoring and alert systems.</p>
                         <div className='flex flex-col gap-3'>
                             <h1 className='font-bold text-sm'>Key Features:</h1>
-                            <div className='grid grid-cols-2 gap-2'>
+                            <div className='sm:grid sm:grid-cols-2 flex flex-col gap-2'>
                                 <p className='flex items-center gap-1 text-[12px] text-gray-500'>
                                     <CircleCheckBig color='#00bd7e' size={'12px'} />
                                     High-voltage deterrent
@@ -153,8 +156,11 @@ const Services = () => {
                         <button className='px-4 py-1 bg-blue-600 rounded-md w-fit text-white text-sm cursor-pointer hover:bg-blue-800'>Get A Quote</button>
                     </div>
                 </div>
-                <div className='flex w-full h-[350px] rounded-md shadow-md'>
-                    <div className='p-[40px] flex flex-col gap-3 w-[50%]'>
+                <div className='sm:flex w-full sm:h-[350px] h-fit rounded-md shadow-md'>
+                    <div className='sm:w-[50%] sm:h-full h-[50%] sm:hidden block'>
+                        <img src={alarm} alt="cctv" className='w-full h-full object-cover sm:rounded-r-lg rounded-t-lg' />
+                    </div>
+                    <div className='p-[40px] flex flex-col gap-3 sm:w-[50%] sm:h-full h-[50%]'>
                         <div className='flex items-center gap-2'>
                             <div className='w-[50px] h-[50px] rounded-lg flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500'>
                                 <Shield color='white' />
@@ -164,7 +170,7 @@ const Services = () => {
                         <p className='text-gray-500'>Comprehensive alarm systems with 24/7 monitoring and emergency response.</p>
                         <div className='flex flex-col gap-3'>
                             <h1 className='font-bold text-sm'>Key Features:</h1>
-                            <div className='grid grid-cols-2 gap-2'>
+                            <div className='sm:grid sm:grid-cols-2 flex flex-col gap-2'>
                                 <p className='flex items-center gap-1 text-[12px] text-gray-500'>
                                     <CircleCheckBig color='#00bd7e' size={'12px'} />
                                     24/7 monitoring service
@@ -193,17 +199,17 @@ const Services = () => {
                         </div>
                         <button className='px-4 py-1 bg-blue-600 rounded-md w-fit text-white text-sm cursor-pointer hover:bg-blue-800'>Get A Quote</button>
                     </div>
-                    <div className='w-[50%] h-full'>
+                    <div className='w-[50%] sm:block hidden h-full'>
                         <img src={alarm} alt="cctv" className='w-full h-full object-cover rounded-r-lg' />
                     </div>
                 </div>
             </div>
-            <div className='bg-[#f2f7fc] px-[100px] py-[40px]'>
+            <div className='bg-[#f2f7fc] sm:px-[100px] px-[40px] py-[40px]'>
                 <div className="w-full flex flex-col items-center justify-center gap-2 mb-[20px]">
-                    <h1 className="font-bold text-3xl">Why Choose Dalex Security?</h1>
-                    <p className="text-gray-500 text-center w-[65%]">We go beyond installation to provide comprehensive support and maintenance for all your security systems.</p>
+                    <h1 className="font-bold sm:text-3xl text-xl">Why Choose Dalex Security?</h1>
+                    <p className="text-gray-500 text-center sm:w-[65%]">We go beyond installation to provide comprehensive support and maintenance for all your security systems.</p>
                 </div>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='sm:grid sm:grid-cols-3 flex flex-col gap-6'>
                     <div className='flex flex-col gap-3 items-center justify-center p-5 shadow-md bg-white rounded-md'>
                         <div className='w-[50px] h-[50px] flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-md'>
                             <Clock4 color='white' />
@@ -227,12 +233,12 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-white px-[100px] py-[40px]'>
+            <div className='bg-white sm:px-[100px] px-[40px] py-[40px]'>
                 <div className="w-full flex flex-col items-center justify-center gap-2 mb-[20px]">
-                    <h1 className="font-bold text-3xl">Our Installation Process</h1>
-                    <p className="text-gray-500 text-center w-[65%]">From consultation to ongoing support, we ensure a smooth and professional experience.</p>
+                    <h1 className="font-bold sm:text-3xl text-xl">Our Installation Process</h1>
+                    <p className="text-gray-500 text-center sm:w-[65%] sm:text-normal text-sm">From consultation to ongoing support, we ensure a smooth and professional experience.</p>
                 </div>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='sm:grid sm:grid-cols-4 gap-6'>
                     <div className='flex flex-col gap-3 items-center justify-center p-5 bg-white rounded-md'>
                         <div className='w-[50px] h-[50px] flex items-center justify-center bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-full'>
                             <h1 className='text-white font-bold text-xl'>01</h1>
@@ -263,11 +269,11 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 py-[40px] h-[300px]">
+            <div className="sm:px-0 px-[40px] bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 py-[40px] h-[300px]">
                 <div className="flex flex-col gap-3 w-full h-full items-center justify-center">
-                    <h1 className="text-4xl font-bold text-white">Ready to Secure Your Business?</h1>
-                    <p className="text-white ">Get a free consultation and custom security assessment from our experts.</p>
-                    <div className="flex items-center gap-3">
+                    <h1 className="sm:text-4xl text-2xl font-bold text-white">Ready to Secure Your Business?</h1>
+                    <p className="text-white text-center sm:text-normal text-sm">Get a free consultation and custom security assessment from our experts.</p>
+                    <div className="sm:flex flex sm:flex-row flex-col items-center gap-3">
                         <button className="bg-white px-6 py-1 text-blue-600 rounded-md text-sm hover:bg-blue-200 cursor-pointer">
                             Get Free Quote
                         </button>
