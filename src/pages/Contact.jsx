@@ -4,20 +4,20 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-            <div className='bg-[#f2f7fc] px-[100px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center'>
+            <div className='bg-[#f2f7fc] sm:px-[100px] px-[40px] py-[40px] h-[50vh] flex flex-col gap-5 items-center justify-center'>
                 <p className='text-[12px] px-3 py-1 bg-[#dbebff] rounded-md text-[#2b4fba] w-fit'>Get In Touch</p>
                 <div className="flex flex-col gap-2 items-center justify-center">
-                    <h1 className="text-4xl font-bold text-center">
+                    <h1 className="sm:text-4xl text-2xl font-bold text-center">
                         Contact{" "}
                         <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 bg-clip-text text-transparent">
                             Our Experts
                         </span>
                     </h1>
-                    <p className="text-gray-600 text-center w-[60%]">Ready to secure your business? Get a free consultation and custom quote from our security professionals.</p>
+                    <p className="text-gray-600 text-center sm:w-[60%]">Ready to secure your business? Get a free consultation and custom quote from our security professionals.</p>
                 </div>
             </div>
-            <div className='px-[100px] py-[40px] bg-white flex gap-8'>
-                <div className='w-[50%]'>
+            <div className='sm:px-[100px] px-[40px] py-[40px] bg-white sm:flex sm:flex-row flex flex-col gap-8'>
+                <div className='sm:w-[50%]'>
                     <form action="" className='p-3 bg-white shadow-md rounded-md'>
                         <div className='mb-[40px] flex flex-col'>
                             <h1 className='font-bold'>Send us a Message</h1>
@@ -53,10 +53,10 @@ const Contact = () => {
                         </div>
                     </form>
                 </div>
-                <div className='w-[50%]'>
+                <div className='sm:w-[50%]'>
                     <div className='mb-[20px]'>
-                        <h1 className='font-bold text-2xl'>Get in Touch</h1>
-                        <p className='text-gray-500'>Our security experts are ready to help you protect your business. Contact us today for a free consultation.</p>
+                        <h1 className='font-bold sm:text-2xl text-xl'>Get in Touch</h1>
+                        <p className='text-gray-500 sm:text-normal text-sm'>Our security experts are ready to help you protect your business. Contact us today for a free consultation.</p>
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className='p-4 flex gap-4 bg-white shadow-lg rounded-md'>
@@ -135,19 +135,19 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#f2f7fc] px-[100px] py-[40px] flex flex-col gap-6 items-center justify-center'>
+            <div className='bg-[#f2f7fc] sm:px-[100px] px-[40px] py-[40px] flex flex-col gap-6 items-center justify-center'>
                 <div className='flex flex-col gap-3 items-center justify-center'>
-                    <h1 className='font-bold text-3xl'>Visit our offices</h1>
-                    <p className='text-gray-500 text-center text-lg'>See our security equipment in action and meet our expert team.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Visit our offices</h1>
+                    <p className='text-gray-500 text-center sm:text-lg text-sm'>See our security equipment in action and meet our expert team.</p>
                 </div>
                 <div className='w-full h-[350px] rounded-lg bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 flex items-center justify-center'>
                     <h1 className='text-white '>Map Coming Soon</h1>
                 </div>
             </div>
-            <div className='bg-white px-[200px] py-[40px] flex flex-col gap-6 items-center justify-center'>
+            <div className='bg-white sm:px-[200px] px-[40px] py-[40px] flex flex-col gap-6 items-center justify-center'>
                 <div className='flex flex-col gap-3 items-center justify-center'>
-                    <h1 className='font-bold text-3xl'>Frequently Asked Questions</h1>
-                    <p className='text-gray-500 text-center text-lg'>Quick answers to common questions about our security services.</p>
+                    <h1 className='font-bold sm:text-3xl text-xl'>Frequently Asked Questions</h1>
+                    <p className='text-gray-500 text-center sm:text-lg text-sm'>Quick answers to common questions about our security services.</p>
                 </div>
                 <div className='flex flex-col gap-4'>
                     <div className='flex flex-col gap-3 shadow-lg rounded-md p-8'>
@@ -168,8 +168,8 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col gap-3 bg-red-500 px-[100px] py-[40px] items-center justify-center'>
-                <h1 className='text-white font-bold text-3xl'>Emergency Support</h1>
+            <div className='flex flex-col gap-3 bg-red-500 sm:px-[100px] px-[40px] py-[40px] items-center justify-center'>
+                <h1 className='text-white font-bold sm:text-3xl text-xl'>Emergency Support</h1>
                 <p className='text-white text-center'>For security emergencies and urgent technical support, call our 24/7 hotline.</p>
                 <p className='bg-white text-red-500 px-4 py-1 flex items-center justify-center text-sm rounded-md'>Call Emergency Line: +254712345678</p>
             </div>
