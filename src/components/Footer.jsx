@@ -4,8 +4,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='bg-[#0f172a]'>
-      <div className='w-full px-[100px] pt-[60px] pb-[40px] border-b border-gray-800'>
-        <div className='grid grid-cols-4 gap-6 '>
+      <div className='w-full sm:px-[100px] px-[40px] pt-[60px] pb-[40px] border-b border-gray-800'>
+        <div className='sm:grid sm:grid-cols-4 gap-6 flex flex-col'>
           <div className='flex flex-col gap-3'>
             <div className="flex gap-2 items-center">
               <div className="h-[38px] w-[38px] bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 flex items-center justify-center rounded-xl">
@@ -104,22 +104,22 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='px-[100px] py-[20px] flex items-center justify-between border-b border-gray-800'>
-        <p className='text-sm text-gray-500'>&copy; 2025 Dalex Security Experts. All rights reserved.</p>
+      <div className='sm:px-[100px] px-[40px] py-[20px] flex items-center justify-between border-b border-gray-800'>
+        <p className='sm:text-sm text-gray-500 text-[10px]'>&copy; 2025 Dalex Security Experts. All rights reserved.</p>
         <div className='flex items-center gap-3'>
-          <a href="policy" className='text-gray-500 hover:text-[#0092b9] text-sm'>Privacy Policy</a>
-          <a href="terms" className='text-gray-500 hover:text-[#0092b9] text-sm'>Terms of Service</a>
+          <a href="policy" className='text-gray-500 hover:text-[#0092b9] sm:text-sm text-[10px]'>Privacy Policy</a>
+          <a href="terms" className='text-gray-500 hover:text-[#0092b9] sm:text-sm text-[10px]'>Terms of Service</a>
         </div>
       </div>
-      <div className='px-[100px] py-[10px] bg-[#020617] flex items-center justify-center gap-4' >
+      <div className='sm:px-[100px] px-[40px] py-[10px] bg-[#020617] flex items-center justify-center gap-4' >
         <p className='flex text-[12px] text-gray-500 items-center gap-1'>
           <Shield size={12} />
           ISO 27001 Certified
         </p>
-        <p className='text-[12px] text-gray-500'>Licensed Security Contractor</p>
-        <p className='text-[12px] text-gray-500'>Bonded & Insured</p>
-        <p className='text-[12px] text-gray-500'>BBB A+ Rating</p>
-        <p className='text-[12px] text-gray-500'>CCTV Specialist Certified</p>
+        <p className='sm:text-[12px] text-[10px] text-gray-500'>Licensed Security Contractor</p>
+        <p className='sm:text-[12px] text-[10px] text-gray-500'>Bonded & Insured</p>
+        <p className='sm:text-[12px] text-[10px] text-gray-500'>BBB A+ Rating</p>
+        <p className='sm:text-[12px] text-[10px] text-gray-500'>CCTV Specialist Certified</p>
       </div>
     </div>
   )
