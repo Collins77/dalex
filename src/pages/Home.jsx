@@ -1,8 +1,21 @@
 import { Camera, CircleCheckBig, Fingerprint, Shield, Star, Zap } from "lucide-react"
 import cctv from '../assets/cctvee.jpg'
+import { useNavigate } from "react-router-dom"
+import { toast } from "sonner";
 
 const Home = () => {
+    const navigate = useNavigate();
 
+    const copyNumber = () => {
+    const phoneNumber = "+254712253278" // <-- replace with your real number
+    navigator.clipboard.writeText(phoneNumber)
+      .then(() => {
+        toast.success("Number copied to clipboard")
+      })
+      .catch(() => {
+        toast.error("Failed to copy number")
+      })
+  }
 
   return (
     <div className=''>
@@ -19,8 +32,8 @@ const Home = () => {
             <p className="text-gray-600">Advanced security solutions tailored for your business. From CCTV surveillance to biometric access control, we provide comprehensive protection you can trust.</p>
           </div>
           <div className="sm:flex sm:flex-row sm:items-center sm:gap-4 gap-2 flex flex-col">
-            <button className="bg-blue-600 text-white cursor-pointer px-6 py-1 rounded-md text-sm hover:bg-blue-800 transition-all duration-300">Get a Quote</button>
-            <button className="bg-white text-blue-600 text-sm border border-blue-400 px-6 py-1 rounded-md cursor-pointer hover:bg-blue-400 hover:text-white transition-all duration-300">Shop Now</button>
+            <button onClick={() => navigate("/contact")} className="bg-blue-600 text-white cursor-pointer px-6 py-1 rounded-md text-sm hover:bg-blue-800 transition-all duration-300">Get a Quote</button>
+            <button onClick={() => navigate("/shop")} className="bg-white text-blue-600 text-sm border border-blue-400 px-6 py-1 rounded-md cursor-pointer hover:bg-blue-400 hover:text-white transition-all duration-300">Shop Now</button>
           </div>
           <div className="grid grid-cols-3 gap-3">
             <div className="flex gap-2 items-center bg-white px-2 py-1 rounded-md">
@@ -160,10 +173,10 @@ const Home = () => {
           <h1 className="sm:text-4xl text-xl font-bold text-white">Ready to Secure Your Business?</h1>
           <p className="text-white sm:text-normal text-sm text-center">Get a free consultation and custom security assessment from our experts.</p>
           <div className="sm:flex flex flex-col sm:flex-row items-center gap-3">
-            <button className="bg-white px-6 py-1 text-blue-600 rounded-md text-sm hover:bg-blue-200 cursor-pointer">
+            <button onClick={() => navigate("/contact")} className="bg-white px-6 py-1 text-blue-600 rounded-md text-sm hover:bg-blue-200 cursor-pointer">
               Get Free Quote
             </button>
-            <button className="bg-blue-600 text-white text-sm px-6 py-1 rounded-md hover:bg-blue-800 cursor-pointer">
+            <button onClick={copyNumber} className="bg-blue-600 text-white text-sm px-6 py-1 rounded-md hover:bg-blue-800 cursor-pointer">
               Call Us Now
             </button>
           </div>

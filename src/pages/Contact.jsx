@@ -65,8 +65,8 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col gap-1'>
                                 <h1 className='text-sm font-bold'>Phone</h1>
-                                <p className='text-sm text-gray-600'>+254712345678</p>
-                                <p className='text-sm text-gray-600'>+254787654321</p>
+                                <p className='text-sm text-gray-600'>+254712253278</p>
+                                <p className='text-sm text-gray-600'>+254715523751</p>
                                 <p className='text-[12px] text-gray-500'>Available 24/7</p>
                             </div>
                         </div>
@@ -171,7 +171,7 @@ const Contact = () => {
             <div className='flex flex-col gap-3 bg-red-500 sm:px-[100px] px-[40px] py-[40px] items-center justify-center'>
                 <h1 className='text-white font-bold sm:text-3xl text-xl'>Emergency Support</h1>
                 <p className='text-white text-center'>For security emergencies and urgent technical support, call our 24/7 hotline.</p>
-                <p className='bg-white text-red-500 px-4 py-1 flex items-center justify-center text-sm rounded-md'>Call Emergency Line: +254712345678</p>
+                <p className='bg-white text-red-500 px-4 py-1 flex items-center justify-center text-sm rounded-md'>Call Emergency Line: +254712253278</p>
             </div>
         </div>
     )

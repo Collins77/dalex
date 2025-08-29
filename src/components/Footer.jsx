@@ -22,7 +22,7 @@ const Footer = () => {
             <div className='flex flex-col gap-3'>
               <div className='flex items-center gap-2'>
                 <Phone color='#0092b9' size={16} />
-                <p className='text-gray-500 text-sm'>+254712345678</p>
+                <p className='text-gray-500 text-sm'>+254712253278</p>
               </div>
               <div className='flex items-center gap-2'>
                 <Mail color='#0092b9' size={16} />
@@ -38,22 +38,22 @@ const Footer = () => {
             <h1 className='font-bold text-white'>Our Services</h1>
             <ul className='text-gray-500 text-sm flex flex-col gap-3'>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>CCTV Installation</a>
+                <a href="services" className='hover:text-[#0092b9]'>CCTV Installation</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>Biometric Access Control</a>
+                <a href="services" className='hover:text-[#0092b9]'>Biometric Access Control</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>Electric Fence Systems</a>
+                <a href="services" className='hover:text-[#0092b9]'>Electric Fence Systems</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>Alarm & Monitoring</a>
+                <a href="services" className='hover:text-[#0092b9]'>Alarm & Monitoring</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>Security Consultation</a>
+                <a href="services" className='hover:text-[#0092b9]'>Security Consultation</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>System Maintenance</a>
+                <a href="services" className='hover:text-[#0092b9]'>System Maintenance</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                 <a href="contact" className='hover:text-[#0092b9]'>Contact</a>
               </li>
               <li>
-                <a href="" className='hover:text-[#0092b9]'>Support</a>
+                <a href="contact" className='hover:text-[#0092b9]'>Support</a>
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ const Footer = () => {
               <div className='border border-red-600 rounded-md bg-red-600/20 p-3 mt-4 flex flex-col gap-2'>
                 <h1 className='font-bold text-sm text-red-600'>24/7 Emergency Support</h1>
                 <p className='text-sm text-gray-500'>For urgent security issues, call our emergency hotline:</p>
-                <h1 className='font-bold text-sm text-white'>+254712345678</h1>
+                <h1 className='font-bold text-sm text-white'>+254712253278</h1>
               </div>
             </div>
           </div>
