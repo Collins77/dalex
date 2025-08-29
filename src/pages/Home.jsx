@@ -1,5 +1,5 @@
 import { Camera, CircleCheckBig, Fingerprint, Shield, Star, Zap } from "lucide-react"
-import cctv from '../assets/cctvee.jpg'
+import cctv from '../assets/alex.jpg'
 import { useNavigate } from "react-router-dom"
 import { toast } from "sonner";
 
