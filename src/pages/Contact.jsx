@@ -141,7 +141,17 @@ const Contact = () => {
                     <p className='text-gray-500 text-center sm:text-lg text-sm'>See our security equipment in action and meet our expert team.</p>
                 </div>
                 <div className='w-full h-[350px] rounded-lg bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 flex items-center justify-center'>
-                    <h1 className='text-white '>Map Coming Soon</h1>
+                    <iframe
+                        title="company-location"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.91668376312!2d36.898961374965495!3d-1.2181057987702761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTMnMDUuMiJTIDM2wrA1NCcwNS41IkU!5e0!3m2!1sen!2ske!4v1756985283676!5m2!1sen!2ske"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="rounded-md shadow"
+                    ></iframe>
                 </div>
             </div>
             <div className='bg-white sm:px-[200px] px-[40px] py-[40px] flex flex-col gap-6 items-center justify-center'>

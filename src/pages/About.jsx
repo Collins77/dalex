@@ -106,7 +106,7 @@ const About = () => {
                             <Users color='white' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='font-semibold'>Alex Rodriguez</h1>
+                            <h1 className='font-semibold'>Alex Kimuri Wanjohi</h1>
                             <p className='text-sm text-blue-600'>CEO & Founder</p>
                         </div>
                         <p className='text-gray-500 text-[12px] text-center'>Former security consultant with 15+ years experience in enterprise security solutions.</p>
@@ -116,7 +116,7 @@ const About = () => {
                             <Users color='white' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='font-semibold'>Alex Rodriguez</h1>
+                            <h1 className='font-semibold'>Alex Kimuri Wanjohi</h1>
                             <p className='text-sm text-blue-600'>CEO & Founder</p>
                         </div>
                         <p className='text-gray-500 text-[12px] text-center'>Former security consultant with 15+ years experience in enterprise security solutions.</p>
@@ -126,7 +126,7 @@ const About = () => {
                             <Users color='white' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='font-semibold'>Alex Rodriguez</h1>
+                            <h1 className='font-semibold'>Alex Kimuri Wanjohi</h1>
                             <p className='text-sm text-blue-600'>CEO & Founder</p>
                         </div>
                         <p className='text-gray-500 text-[12px] text-center'>Former security consultant with 15+ years experience in enterprise security solutions.</p>
@@ -136,7 +136,7 @@ const About = () => {
                             <Users color='white' />
                         </div>
                         <div className='flex flex-col items-center justify-center'>
-                            <h1 className='font-semibold'>Alex Rodriguez</h1>
+                            <h1 className='font-semibold'>Alex Kimuri Wanjohi</h1>
                             <p className='text-sm text-blue-600'>CEO & Founder</p>
                         </div>
                         <p className='text-gray-500 text-[12px] text-center'>Former security consultant with 15+ years experience in enterprise security solutions.</p>
